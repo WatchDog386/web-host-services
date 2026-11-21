@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optimas Hosting — Fast, Local Web & VPS Hosting</title>
+  <meta name="description" content="Web hosting, KVM virtual servers and containers on enterprise Proxmox infrastructure. Daily backups, SSD storage and real local support from Optimas.">
+  <meta property="og:title" content="Optimas Hosting — Fast, Local Web & VPS Hosting">
+  <meta property="og:description" content="Web hosting, VPS and containers on enterprise infrastructure with daily backups and local support.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Optimas Hosting home">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>Optimas<strong>Hosting</strong></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav__menu" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#infrastructure">Infrastructure</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--primary btn--sm">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="pill"><span class="dot"></span> All systems operational</span>
+          <h1>Hosting that's <span class="grad">fast, local</span> and actually supported.</h1>
+          <p class="lead">Launch websites, virtual servers and containers on our enterprise Proxmox cloud. NVMe/SSD storage, daily backups and a support team you can call — not a ticket queue on another continent.</p>
+          <div class="hero__cta">
+            <a href="#pricing" class="btn btn--primary">View plans</a>
+            <a href="#contact" class="btn btn--ghost">Talk to sales</a>
+          </div>
+          <ul class="hero__ticks">
+            <li>Free SSL certificates</li>
+            <li>99.9% uptime target</li>
+            <li>No setup fees</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar"><i></i><i></i><i></i><span>deploy — optimas</span></div>
+            <pre class="terminal__body"><code id="typed"></code><span class="caret"></span></pre>
+          </div>
+          <div class="stat-card stat-card--a">
+            <span class="stat-card__label">Avg. response</span>
+            <span class="stat-card__value">38<small>ms</small></span>
+          </div>
+          <div class="stat-card stat-card--b">
+            <span class="stat-card__label">Provision time</span>
+            <span class="stat-card__value">&lt; 60<small>s</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="strip">
+      <div class="container strip__inner">
+        <div><strong>KVM</strong><span>Full virtualisation</span></div>
+        <div><strong>LXC</strong><span>Lightweight containers</span></div>
+        <div><strong>ZFS</strong><span>Self-healing storage</span></div>
+        <div><strong>Daily</strong><span>Automated backups</span></div>
+        <div><strong>24/7</strong><span>Monitoring</span></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Services</span>
+          <h2>Everything you need to get online</h2>
+          <p>From a first business website to production workloads, pick the level of control that fits.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z M3 9h18 M7 7h.01 M10 7h.01"/></svg>
+            </div>
+            <h3>Web Hosting</h3>
+            <p>Managed hosting for websites, WordPress and online stores. We handle the server — you focus on your content.</p>
+            <ul class="checks">
+              <li>Control panel & one-click WordPress</li>
+              <li>Business email accounts</li>
+              <li>Free SSL & daily backups</li>
+            </ul>
+          </article>
+
+          <article class="card card--featured">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v6H4z M4 14h16v6H4z M8 7h.01 M8 17h.01"/></svg>
+            </div>
+            <h3>Virtual Private Servers</h3>
+            <p>Dedicated KVM virtual machines with guaranteed CPU, RAM and storage. Full root access, any OS.</p>
+            <ul class="checks">
+              <li>Ubuntu, Debian, Rocky, Windows Server</li>
+              <li>Web console & snapshots</li>
+              <li>Scale up without migrating</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z M12 12l8-4.5 M12 12v9 M12 12L4 7.5"/></svg>
+            </div>
+            <h3>Containers</h3>
+            <p>LXC containers that boot in seconds and cost less. Perfect for apps, APIs, bots and dev environments.</p>
+            <ul class="checks">
+              <li>Near bare-metal performance</li>
+              <li>Docker-ready templates</li>
+              <li>Pay only for what you use</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z M3 12h18 M12 3c3 3.5 3 14.5 0 18 M12 3c-3 3.5-3 14.5 0 18"/></svg>
+            </div>
+            <h3>Domains & DNS</h3>
+            <p>Register or transfer your domain and manage DNS records alongside your hosting, in one place.</p>
+            <ul class="checks">
+              <li>Free domain on annual plans</li>
+              <li>Fast DNS propagation</li>
+              <li>Free transfers</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Backup & Recovery</h3>
+            <p>Automated off-node backups with point-in-time restores. Lost a file or broke an update? Roll back in minutes.</p>
+            <ul class="checks">
+              <li>Daily incremental backups</li>
+              <li>7–30 day retention</li>
+              <li>One-click restore</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16 M4 12h16 M4 18h10 M18 16l2 2-2 2"/></svg>
+            </div>
+            <h3>Managed Services</h3>
+            <p>Need a hand? We'll set up, secure, patch and monitor your servers so you never have to touch a terminal.</p>
+            <ul class="checks">
+              <li>Server setup & hardening</li>
+              <li>Migrations from other hosts</li>
+              <li>Proactive monitoring</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple plans, no surprises</h2>
+          <p>All plans include SSL, backups and support. Pay annually and get 2 months free.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Plan type">
+          <button role="tab" class="tab is-active" aria-selected="true" data-tab="web">Web Hosting</button>
+          <button role="tab" class="tab" aria-selected="false" data-tab="vps">VPS</button>
+          <button role="tab" class="tab" aria-selected="false" data-tab="lxc">Containers</button>
+        </div>
+
+        <div class="billing">
+          <span data-billing-label="monthly" class="is-on">Monthly</span>
+          <button class="switch" role="switch" aria-checked="false" aria-label="Bill annually"><span></span></button>
+          <span data-billing-label="yearly">Yearly <em class="save">Save 17%</em></span>
+        </div>
+
+        <div class="plans" id="plans" aria-live="polite"></div>
+
+        <p class="note">Need something bigger or custom? <a href="#contact">Ask for a quote</a> — we build dedicated resource pools too.</p>
+      </div>
+    </section>
+
+    <!-- INFRASTRUCTURE -->
+    <section class="section" id="infrastructure">
+      <div class="container infra">
+        <div class="infra__copy">
+          <span class="eyebrow">Infrastructure</span>
+          <h2>Built on enterprise-grade virtualisation</h2>
+          <p>Every service runs on our own <strong>Proxmox VE</strong> cluster — the same open-source platform trusted by universities, banks and data centres worldwide. Your data stays on hardware we own and operate.</p>
+          <div class="features">
+            <div class="feature">
+              <h4>Isolated by design</h4>
+              <p>KVM hardware virtualisation keeps every VPS fully separated from its neighbours.</p>
+            </div>
+            <div class="feature">
+              <h4>Redundant storage</h4>
+              <p>ZFS mirrored disks with checksums detect and repair corruption automatically.</p>
+            </div>
+            <div class="feature">
+              <h4>Fast local network</h4>
+              <p>Low-latency connectivity backed by our own ISP network for snappy page loads.</p>
+            </div>
+            <div class="feature">
+              <h4>Firewall & DDoS filtering</h4>
+              <p>Per-server firewall rules plus network-level filtering of malicious traffic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="infra__panel" aria-hidden="true">
+          <div class="rack">
+            <div class="rack__head"><span>node / server</span><span class="ok">online</span></div>
+            <div class="meter"><label>CPU</label><div><i style="--v:34%"></i></div><b>34%</b></div>
+            <div class="meter"><label>Memory</label><div><i style="--v:58%"></i></div><b>58%</b></div>
+            <div class="meter"><label>Storage</label><div><i style="--v:41%"></i></div><b>41%</b></div>
+            <div class="meter"><label>Network</label><div><i style="--v:22%"></i></div><b>22%</b></div>
+            <ul class="vms">
+              <li><span class="led"></span>vm-101 · web-prod</li>
+              <li><span class="led"></span>vm-102 · api</li>
+              <li><span class="led"></span>ct-201 · mail</li>
+              <li><span class="led"></span>ct-202 · dns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">How it works</span>
+          <h2>Online in three steps</h2>
+        </header>
+        <ol class="steps">
+          <li><span>1</span><h3>Choose a plan</h3><p>Pick web hosting, a VPS or a container — or tell us what you need.</p></li>
+          <li><span>2</span><h3>We provision it</h3><p>Your service is set up and your login details are sent to you, usually the same day.</p></li>
+          <li><span>3</span><h3>Go live</h3><p>Upload your site or deploy your app. Need help migrating? We'll do it free.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>What's the difference between web hosting and a VPS?</summary>
+            <p>Web hosting is fully managed — ideal for websites and WordPress. A VPS is your own virtual server with root access, so you can install any software, but you (or our managed service) look after it.</p>
+          </details>
+          <details>
+            <summary>Can you move my existing website for me?</summary>
+            <p>Yes. Migrations from other providers are free on all annual plans. Send us your current host details and we'll handle the move with minimal downtime.</p>
+          </details>
+          <details>
+            <summary>Which operating systems can I run?</summary>
+            <p>Ubuntu, Debian, AlmaLinux, Rocky Linux and Windows Server (licence extra) on VPS plans. Containers support most popular Linux distributions.</p>
+          </details>
+          <details>
+            <summary>How do payments work?</summary>
+            <p>Pay monthly or annually by mobile money, bank transfer or card. There are no setup fees and you can upgrade at any time.</p>
+          </details>
+          <details>
+            <summary>Do you take backups?</summary>
+            <p>Every plan includes automated daily backups stored on separate hardware. You can request restores at any time, and VPS customers can also take their own snapshots.</p>
+          </details>
+          <details>
+            <summary>Can I upgrade later?</summary>
+            <p>Absolutely. Add CPU, RAM or storage whenever you need — VPS upgrades usually take just a reboot, with no data migration.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__copy">
+          <span class="eyebrow">Get started</span>
+          <h2>Tell us what you're building</h2>
+          <p>Send us a message and our team will get back to you with the right plan — usually within a few hours.</p>
+          <ul class="contact__list">
+            <li><b>Email</b><a data-config="email" href="#"></a></li>
+            <li><b>Phone / WhatsApp</b><a data-config="phone" href="#"></a></li>
+            <li><b>Hours</b><span data-config="hours"></span></li>
+          </ul>
+        </div>
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__row">
+            <label>Name<input name="name" required autocomplete="name"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          </div>
+          <div class="form__row">
+            <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+            <label>Interested in
+              <select name="plan" id="plan-select">
+                <option>Not sure yet</option>
+              </select>
+            </label>
+          </div>
+          <label>Message<textarea name="message" rows="5" required placeholder="Tell us about your website or project…"></textarea></label>
+          <button class="btn btn--primary btn--block" type="submit">Send message</button>
+          <p class="form__status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#top" class="brand">
+          <img src="assets/favicon.svg" alt="" width="28" height="28">
+          <span>Optimas<strong>Hosting</strong></span>
+        </a>
+        <p>Web hosting, VPS & containers by Optimas.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Optimas. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
